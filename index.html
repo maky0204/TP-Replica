@@ -31,13 +31,13 @@
                             <a class="nav-link active text-light" aria-current="page" href="#">La conferencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" aria-current="page" href="#">Los oradores</a>
+                            <a class="nav-link text-secondary" aria-current="page" href="#oradores">Los oradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" aria-current="page" href="#">El lugar y la fecha</a>
+                            <a class="nav-link text-secondary" aria-current="page" href="#lugar">El lugar y la fecha</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#">Conviertete en orador</a>
+                            <a class="nav-link text-secondary" href="#orador">Conviertete en orador</a>
                         </li>
                         <li class="nav-item">
                             <!--text-success... agregado para poner el texto en verde-->
@@ -49,12 +49,14 @@
 
         </nav>
 
+
+
         <!--Si al "padre" le agregamos "text-center" centramos imagenes, porque ese centra elementos inline (en linea)-->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <!--class="img-fluid d-block w-100".... con esto hacemos una imagen responsive y el ancho total de la pag.-->
-                    <img src="./images/ba1.jpg" class="img-fluid d-block w-100" alt="BsAs">
+                    <img src="./images/ba1.jpg" class="img-fluid w-100" alt="BsAs">
                     <div class="carousel-caption">
                         <h5>Conf Bs As</h5>
                         <p>Bs As llega por primera vez a Argentina. Un evento para compartir con <br> nuestra comunidad
@@ -65,10 +67,24 @@
                             primer
                             <br> nivel que tenemos para ti. Te esperamos!
                         </p>
+                        <!-- 
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-lg text-light border me-md-2" type="button">Button</button>
+                            <button class="btn btn-success btn-lg" type="button">Button</button>
+                          </div>
+                       -->
+                        <div class="gap-2 d-md-flex justify-content-md-end">
+                            <button type="button" class="btn btn-lg text-light border me-md-2">Quiero ser Orador</button>
+                            <button type="button" class="btn btn-success btn-lg justify-content-md-end">Comprar Tickets</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+
+
+
     </header>
 
     <main>
@@ -118,44 +134,52 @@
                 </div>
             </div>
         </div>
+        <br>
 
-
-
-
-
-
-
-
-        <!--
-        <div class="lugar" id="lugar">
-            <div class="imagenLugar">
-                <img src="./images/honolulu.jpg" alt="honolulu" width="50%" height="35%">
-            </div>
-            <div class="textoLugar">
-                <h2>Bs As - Octubre</h2>
-                <p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos.
-                    Honolulu es la <br>más sureña de entre las principales ciudades estaunidenses. Aunque el nombre de
-                    Honolulu han formado una ciudad- <br>condado consolidada que cubre toda la ciudad (aproximadamente
-                    600 km2 de superficie). </p>
-                <button type="button" class="btn">Conoce mas</button>
+        <div class="card mb-3" id="lugar" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="./images/honolulu.jpg" class="img-fluid rounded-start" alt="honolulu">
+                </div>
+                <div class="col-md-6 bg-dark text-light">
+                    <div class="card-body">
+                        <h5 class="card-title">Bs As - Octubre</h5>
+                        <p class="card-text">Buenos Aires es la provincia y localidad mas grande del estado de
+                            Argentina, en los Estados Unidos.
+                            Honolulu es la <br>más sureña de entre las principales ciudades estaunidenses. Aunque el
+                            nombre de
+                            Honolulu han formado una ciudad- <br>condado consolidada que cubre toda la ciudad
+                            (aproximadamente
+                            600 km2 de superficie).</p>
+                            <button type="button" class="btn btn-lg text-light border">Conoce mas</button>
+                    </div>
+                </div>
             </div>
         </div>
--->
+
+
+        <br>
         <h6 class="oradores" id="orador">CONVIÉRTETE EN UN</h6>
         <h2 class="oradores">ORADOR</h2>
         <p class="oradores">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
 
-        <div class="formulario">
-            <form action="#">
-                <input type="nombre" class="formDatos" placeholder="Nombre">
-                <input type="apellido" class="formDatos" placeholder="Apellido">
-            </form>
-        </div>
-        <div>
-            <textarea class="formText" placeholder="Sobre qué queres hablar?" rows="3"></textarea>
-            <p id="extraForm">Recuerda incluir un título para tu charla</p>
-            <button type="submit" class="formSubmit">Enviar</button>
-        </div>
+        <form class="row g-3 col-6 mx-auto">
+            <div class="col-md-6">
+                <input type="name" class="form-control" placeholder="Nombre" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <input type="apellido" class="form-control" placeholder="Apellido" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <textarea class="form-control" placeholder="Sobre que queres hablar?" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+                <p class="text-secondary">Recuerda incluir un tirulo para tu charla</p>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+        </form>
+        <br>
 
 
         <script src="./bootstrap/js/bootstrap.min.js"></script>

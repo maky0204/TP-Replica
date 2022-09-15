@@ -2,10 +2,12 @@
     padding: 0;
 }
 
+
 .carousel-item .img-fluid{
-    
-    height: 85%;
+
+    height: 85vh;
     filter: brightness(45%); /*Oscurece la imagen*/
+    
 }
 
 .carousel-caption h5 {
@@ -19,75 +21,13 @@
     text-align:right;
 }
 
+
 .oradores{
     text-align: center;
 }
 
 
 
-
-
-/*
-.lugar{
-    position: relative;
-    display: inline-block;
-    margin-top: 2em;
-    margin-bottom: 1em; /*Hace la separacion al form
-}
-
-.imagenLugar{
-   padding-top: 0em;
-   border: 1px rgb(7, 6, 6) solid;
-   background-color: rgb(81, 83, 83);
-}
-
-.textoLugar{
-    position: absolute;
-    display: inline;
-    align-content: right;
-    margin: 1em;
-    top: 0%;
-    left: 50%;
-    color:white;
-    text-align: left;
-    
-}
-*/
-.formulario{
-    text-align: center;
-    
-}
-
-.formulario .formDatos{
-    width: 350px;
-    margin-bottom: 1em; /*Hace la separacion al textarea*/
-}
-
-.formText{
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px;
-    padding-top: 2em; /*Tamaño del textarea*/
-    margin-bottom: 1em; /*Hace la separacion al boton*/
-}
-
-#extraForm{
-    margin-left: 450px;
-}
-
-.formSubmit{
-    display: block; /*Primeras 3 lineas para centrarlo*/
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px; /*Le damos el ancho*/
-    background-color:rgb(126, 180, 43);
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
-    border-radius: 4%;
-    color: white;
-    margin-bottom: 1em; /*Hace la separacion al footer*/
-}
 
 .footerLista{
     display: inline-block;
@@ -105,25 +45,40 @@
     display: inline-block;   
     margin: 1em;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-size: 0.9em;
     color:white;
     width: 150px;    
 }
 
 
+@media (min-width: 320px) { /* Small devices (landscape phones, 576px and up)*/
+    .carousel-caption h5 { font-size: 1em;}
+    .carousel-caption p {font-size: 0.5em;}  
+    .footerLista li {font-size: 0.4em;}
+    .carousel-item .img-fluid{ height: 25vh;}
+
+  }
 @media (min-width: 576px) { /* Small devices (landscape phones, 576px and up)*/
     .carousel-caption h5 { font-size: 1.3em;}
     .carousel-caption p {font-size: 0.9em;}  
+    .footerLista li {font-size: 0.5em;}
+    .carousel-item .img-fluid{ height: 50vh;}
   }
   @media (min-width: 768px) {/* Medium devices (tablets, 768px and up)*/
     .carousel-caption h5 { font-size: 1.4em;}
-    .carousel-caption p {font-size: 0.9em;}  
+    .carousel-caption p {font-size: 0.9em;} 
+    .footerLista li {font-size: 0.6em;} 
+    .carousel-item .img-fluid{ height: 60vh;}
   }
   @media (min-width: 992px) {/* Large devices (desktops, 992px and up)*/
     .carousel-caption h5 { font-size: 1.5em;}
-    .carousel-caption p {font-size: 1.3em;}  
+    .carousel-caption p {font-size: 1.3em;} 
+    .footerLista li {font-size: 0.7em;}  
+    .carousel-item .img-fluid{ height: 70vh;}
   }
   @media (min-width: 1200px) {/* Extra large devices (large desktops, 1200px and up)*/
     .carousel-caption h5 { font-size: 1.6em;}
     .carousel-caption p {font-size: 1.4em;}  
+    .footerLista li {font-size: 1em;} 
+    .carousel-item .img-fluid{ height: 85vh;}
   }
