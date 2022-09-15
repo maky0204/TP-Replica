@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <!--bg-dark... cambiado de light a dark (para ponerlo en gris oscuro)-->
+        <nav class="navbar navbar-expand-lg bg-dark">
+
+            <div class="container-fluid">
+                <img src="./images/codoacodo.png" alt="cac" width="80" height="60">
+                <a class="navbar-brand text-light" href="#">Conf Bs As</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--justify-content-end... Agregado para alinear a la derecha -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <!--text-light... agregado para poner el texto en color blanco-->
+                            <a class="nav-link active text-light" aria-current="page" href="#">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" aria-current="page" href="#">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" aria-current="page" href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#">Conviertete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--text-success... agregado para poner el texto en verde-->
+                            <a class="nav-link text-success" href="#">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/ba1.jpg" class="d-block w-100" alt="BsAs">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Conf Bs As</h5>
+                        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con <br> nuestra comunidad el
+                            conocimiento y experiencia de los expertos que <br> están creando el futuro de Internet. Ven a
+                            conocer a miembros del <br> evento, a otros estudiantes de Codo a Codo y los oradores de primer
+                            <br> nivel que tenemos para ti. Te esperamos!
+                        </p>
+                    </div>
+                </div>  
+            </div> 
+        </div>
+    </header>
+
+    <main>
+
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
