@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
 
@@ -48,30 +49,129 @@
 
         </nav>
 
-
+        <!--Si al "padre" le agregamos "text-center" centramos imagenes, porque ese centra elementos inline (en linea)-->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/ba1.jpg" class="d-block w-100" alt="BsAs">
-                    <div class="carousel-caption d-none d-md-block">
+                    <!--class="img-fluid d-block w-100".... con esto hacemos una imagen responsive y el ancho total de la pag.-->
+                    <img src="./images/ba1.jpg" class="img-fluid d-block w-100" alt="BsAs">
+                    <div class="carousel-caption">
                         <h5>Conf Bs As</h5>
-                        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con <br> nuestra comunidad el
-                            conocimiento y experiencia de los expertos que <br> están creando el futuro de Internet. Ven a
-                            conocer a miembros del <br> evento, a otros estudiantes de Codo a Codo y los oradores de primer
+                        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con <br> nuestra comunidad
+                            el
+                            conocimiento y experiencia de los expertos que <br> están creando el futuro de Internet. Ven
+                            a
+                            conocer a miembros del <br> evento, a otros estudiantes de Codo a Codo y los oradores de
+                            primer
                             <br> nivel que tenemos para ti. Te esperamos!
                         </p>
                     </div>
-                </div>  
-            </div> 
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
 
+        <h6 class="oradores" id="oradores">CONOCE A LOS</h6>
+        <h2 class="oradores">ORADORES</h2>
+
+        <!--col-6... agregando esto se hacen mas chicos los card por las divisiones de columnas-->
+        <!--mx-auto... agregando esto se centran ya que el mx es el margin para ajustar bloques-->
+        <div class="card-group col-6 mx-auto">
+            <!--m-1... agregando esto se establece un margen entre cada card-->
+            <div class="card m-1">
+                <img src="./images/steve.jpg" class="card-img-top" alt="SteveJobs">
+                <div class="card-body">
+                    <!--text-bg-warning... Fondo del texto en amarillo-->
+                    <span class="badge text-bg-warning">JavaScript</span>
+                    <!--text-bg-info text-light... Fondo del texto en cyan y letras en blanco-->
+                    <span class="badge text-bg-info text-light">React</span>
+                    <h5 class="card-title">Steve Jobs</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur
+                        veritatis asperiores quia nemo aut quos animi, non sit impedit? Laboriosam fugiat voluptatum
+                        commodi, cumque inventore architecto quis non quaerat?</p>
+                </div>
+            </div>
+            <!--m-1... agregando esto se establece un margen entre cada card-->
+            <div class="card m-1">
+                <img src="./images/bill.jpg" class="card-img-top" alt="BillGates">
+                <div class="card-body">
+                    <span class="badge text-bg-warning">JavaScript</span>
+                    <span class="badge text-bg-info text-light">React</span>
+                    <h5 class="card-title">Bill Gates</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste labore
+                        recusandae repellendus est assumenda deserunt placeat sequi, dicta, a tempore ut voluptate
+                        laboriosam debitis incidunt hic. Provident accusamus fugiat et!</p>
+                </div>
+            </div>
+            <!--m-1... agregando esto se establece un margen entre cada card-->
+            <div class="card m-1">
+                <img src="./images/ada.jpeg" class="card-img-top" alt="AdaLovelace">
+                <div class="card-body">
+                    <span class="badge text-bg-secondary text-light">Negocios</span>
+                    <span class="badge text-bg-danger text-light">Startups</span>
+                    <h5 class="card-title">Ada Lovelace</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cupiditate
+                        laborum repudiandae, iusto rem distinctio ipsa quidem minima exercitationem eveniet a enim nam
+                        earum suscipit aliquid assumenda laboriosam voluptate vel!</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!--
+        <div class="lugar" id="lugar">
+            <div class="imagenLugar">
+                <img src="./images/honolulu.jpg" alt="honolulu" width="50%" height="35%">
+            </div>
+            <div class="textoLugar">
+                <h2>Bs As - Octubre</h2>
+                <p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos.
+                    Honolulu es la <br>más sureña de entre las principales ciudades estaunidenses. Aunque el nombre de
+                    Honolulu han formado una ciudad- <br>condado consolidada que cubre toda la ciudad (aproximadamente
+                    600 km2 de superficie). </p>
+                <button type="button" class="btn">Conoce mas</button>
+            </div>
+        </div>
+-->
+        <h6 class="oradores" id="orador">CONVIÉRTETE EN UN</h6>
+        <h2 class="oradores">ORADOR</h2>
+        <p class="oradores">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+
+        <div class="formulario">
+            <form action="#">
+                <input type="nombre" class="formDatos" placeholder="Nombre">
+                <input type="apellido" class="formDatos" placeholder="Apellido">
+            </form>
+        </div>
+        <div>
+            <textarea class="formText" placeholder="Sobre qué queres hablar?" rows="3"></textarea>
+            <p id="extraForm">Recuerda incluir un título para tu charla</p>
+            <button type="submit" class="formSubmit">Enviar</button>
+        </div>
+
+
         <script src="./bootstrap/js/bootstrap.min.js"></script>
     </main>
 
     <footer>
+        <div class="footerLista">
+            <ul>
+                <li>Preguntas frecuentes</li>
+                <li>Contáctanos</li>
+                <li>Prensa</li>
+                <li>Conferencias</li>
+                <li>Términos y condiciones</li>
+                <li>Privacidad</li>
+            </ul>
+        </div>
 
     </footer>
 
