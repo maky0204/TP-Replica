@@ -1,5 +1,6 @@
 *{
     padding: 0;
+    list-style: none;
 }
 
 
@@ -9,25 +10,6 @@
     filter: brightness(45%); /*Oscurece la imagen*/
     
 }
-
-.carousel-caption h5 {
-    font-weight: bold;
-    font-size: 1.2em; /* small size since this is the default in Bootstrap */
-    text-align:right;
-}
-
-.carousel-caption p {
-    font-size: 0.4em; /* small size since this is the default in Bootstrap */
-    text-align:right;
-}
-
-
-.oradores{
-    text-align: center;
-}
-
-
-
 
 .footerLista{
     display: inline-block;
@@ -51,34 +33,39 @@
 }
 
 
-@media (min-width: 320px) { /* Small devices (landscape phones, 576px and up)*/
-    .carousel-caption h5 { font-size: 1em;}
-    .carousel-caption p {font-size: 0.5em;}  
-    .footerLista li {font-size: 0.4em;}
-    .carousel-item .img-fluid{ height: 25vh;}
+@media (min-width: 320px) { 
+  .carousel-caption h5 { font-size: 1em;}
+  .carousel-caption p {font-size: 0.5em;}
+  .footerLista li {font-size: 0.4em;}
+  .carousel-item .img-fluid{ height: 25vh;}
+  .d-md-flex .btn{width: 80px; height: 20px; font-size: 0.4em;}
 
-  }
-@media (min-width: 576px) { /* Small devices (landscape phones, 576px and up)*/
-    .carousel-caption h5 { font-size: 1.3em;}
-    .carousel-caption p {font-size: 0.9em;}  
-    .footerLista li {font-size: 0.5em;}
-    .carousel-item .img-fluid{ height: 50vh;}
-  }
-  @media (min-width: 768px) {/* Medium devices (tablets, 768px and up)*/
-    .carousel-caption h5 { font-size: 1.4em;}
-    .carousel-caption p {font-size: 0.9em;} 
-    .footerLista li {font-size: 0.6em;} 
-    .carousel-item .img-fluid{ height: 60vh;}
-  }
-  @media (min-width: 992px) {/* Large devices (desktops, 992px and up)*/
-    .carousel-caption h5 { font-size: 1.5em;}
-    .carousel-caption p {font-size: 1.3em;} 
-    .footerLista li {font-size: 0.7em;}  
-    .carousel-item .img-fluid{ height: 70vh;}
-  }
-  @media (min-width: 1200px) {/* Extra large devices (large desktops, 1200px and up)*/
-    .carousel-caption h5 { font-size: 1.6em;}
-    .carousel-caption p {font-size: 1.4em;}  
-    .footerLista li {font-size: 1em;} 
-    .carousel-item .img-fluid{ height: 85vh;}
-  }
+}
+@media (min-width: 576px) { 
+  .carousel-caption h5 { font-size: 1.3em;}
+  .carousel-caption p {font-size: 0.9em;}  
+  .footerLista li {font-size: 0.5em;}
+  .carousel-item .img-fluid{ height: 50vh;}
+  .d-md-flex .btn{width: 80px; height: 20px; font-size: 0.4em;}
+}
+@media (min-width: 768px) {
+  .carousel-caption h5 { font-size: 1.4em;}
+  .carousel-caption p {font-size: 0.9em;} 
+  .footerLista li {font-size: 0.6em;} 
+  .carousel-item .img-fluid{ height: 60vh;}
+  .d-md-flex .btn{width: 100px; height: 30px; font-size: 0.55em;}
+}
+@media (min-width: 992px) {
+  .carousel-caption h5 { font-size: 1.5em;}
+  .carousel-caption p {font-size: 1.3em;} 
+  .footerLista li {font-size: 0.7em;}  
+  .carousel-item .img-fluid{ height: 70vh;}
+  .d-md-flex .btn{width: 140px; height: 40px; font-size: 0.7em;}
+}
+@media (min-width: 1200px) {
+  .carousel-caption h5 { font-size: 1.6em;}
+  .carousel-caption p {font-size: 1.4em;}  
+  .footerLista li {font-size: 1em;} 
+  .carousel-item .img-fluid{ height: 85vh;}
+  .d-md-flex .btn{width: 180px; height: 40px; font-size: 1em;}
+}
